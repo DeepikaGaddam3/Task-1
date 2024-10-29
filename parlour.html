@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Beauty Parlour</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #9444a4;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        /* Image styling */
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Section styling */
+        .services {
+            max-width: 700px;
+            text-align: left;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+        }
+
+        .services h2 {
+            font-family: 'Playfair Display', serif;
+            color: #9444a4;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .services p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .services ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .services li {
+            margin: 10px 0;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Button styling */
+        .trigger-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #9444a4;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .trigger-button:hover {
+            background-color: #7e3891;
+            transform: scale(1.05);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Link styling */
+        a {
+            color: #9444a4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .services {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .image-container img {
+                width: 280px;
+            }
+
+            .trigger-button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Glamour Beauty Parlour</h1>
+        <p>Your one-stop solution for all beauty needs</p>
+    </header>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.i8ikFAXXMJEZ86DR4KwXVgHaFj&pid=Api&P=0&h=180" alt="Beauty Parlour Image">
+    </div>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>At Glamour Beauty Parlour, we offer a variety of services to make you look and feel your best. From hair styling to skin treatments, we have it all!</p>
+        <ul>
+            <li>Haircut and Styling</li>
+            <li>Facial and Skin Care</li>
+            <li>Makeup for All Occasions</li>
+            <li>Manicure and Pedicure</li>
+            <li>Spa Treatments</li>
+        </ul>
+        <p>Contact us today to book your appointment and experience the best in beauty care. <a href="mailto:info@beautyparlour.com"><br>Email us</a></br>> for more details!</p>
+    </section>
+
+    <!-- Button to trigger an alert -->
+    <button class="trigger-button" onclick="showAlert()">Click Here for a Surprise!</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Glamour Beauty Parlour. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showAlert() {
+            alert("Thank you for visiting Glamour Beauty Parlour! We hope to see you soon!");
+        }
+    </script>
+</body>
+</html>
